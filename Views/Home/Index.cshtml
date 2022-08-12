@@ -1,0 +1,14 @@
+﻿@model HomeViewModel
+
+<div class="row">
+    @foreach (var tenis in Model.TenisPreferidos)
+    {
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <h4>@tenis.TenisNome</h4>
+            <p><img src="@tenis.ImagemUrl" class="img-fluid" /></p>
+            <p>R$ @tenis.Preco</p>
+            <p>Marca: @tenis.TenisMarca</p>
+            <p>@tenis.Descricao</p>
+        </div>
+    }
+</div>
